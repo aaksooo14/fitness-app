@@ -5,9 +5,6 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 
-// @desc    Login user
-// @route   POST /api/user/login
-// @access  Public
 exports.loginUser = async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -32,8 +29,7 @@ exports.loginUser = async (req, res) => {
         // 4. Create JWT token
         const token = jwt.sign(
             { _id: user._id, email: user.email, role: isAdmin ? "admin" : "member" },
-            process.env.JWT_SECRET, // 🔐 Replace with environment variable
-            { expiresIn: "7d" }
+            process.env.JWT_SECRET,
         );
 
         // 5. Respond with token and user data

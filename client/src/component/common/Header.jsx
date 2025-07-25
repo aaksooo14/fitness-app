@@ -9,14 +9,14 @@ const Header = ({ userName, isAdminDashboard, isMemberdashboard }) => {
     const navigate = useNavigate();
 
     const handleLogout = () => {
-        // ✅ Clear localStorage
+        // localStorage
         localStorage.removeItem('token');
         localStorage.removeItem('user');
 
-        // ✅ Optionally show alert
+        //Optionally show alert
         alert('You have been logged out.');
 
-        // ✅ Redirect to login
+        // Redirect to login
         navigate('/login');
     };
 

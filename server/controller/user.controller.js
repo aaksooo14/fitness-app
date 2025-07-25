@@ -1,9 +1,6 @@
 const User = require("../model/user.model");
 const bcrypt = require("bcryptjs");
 
-// @desc    Register new user
-// @route   POST /api/user/signup
-// @access  Public
 const registerUser = async (req, res) => {
     try {
         const { name, email, password, number } = req.body;

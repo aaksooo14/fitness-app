@@ -7,7 +7,6 @@ const Class = require("../model/classess.model");
 router.post("/add-class", upload.single("workoutPdf"), addClass);
 router.get("/classes", getAllClasses);
 
-// ✅ New routes
 router.put("/update-class/:id", upload.single("workoutPdf"), updateClass);
 router.delete("/delete-class/:id", deleteClass);
 

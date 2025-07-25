@@ -13,7 +13,7 @@ const memberRoutes = require("./routes/member.route")
 
 // Middleware
 app.use(cors());
-app.use(express.json()); // ✅ FIXED: called as function
+app.use(express.json());
 
 // Database connection
 mongoose.connect('mongodb://localhost:27017/fitness')
@@ -23,7 +23,7 @@ mongoose.connect('mongodb://localhost:27017/fitness')
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Routes
-app.use("/api/user", userRoutes); // ✅ Will now work if user.controller exports a router
+app.use("/api/user", userRoutes);
 
 app.use("/api", classRoutes);
 app.use("/api/member", memberRoutes);

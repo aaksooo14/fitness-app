@@ -4,7 +4,7 @@ const auth = require('../middlewares/auth');
 const User = require('../model/user.model');
 const Class = require('../model/classess.model');
 
-// ✅ GET /api/member/profile
+// GET /api/member/profile
 router.get('/profile', auth, async (req, res) => {
 
     try {
@@ -19,7 +19,7 @@ router.get('/profile', auth, async (req, res) => {
     }
 });
 
-// ✅ POST /api/member/enroll
+// POST /api/member/enroll
 router.post('/enroll', auth, async (req, res) => {
     const { classId } = req.body;
 
@@ -37,7 +37,7 @@ router.post('/enroll', auth, async (req, res) => {
     }
 });
 
-// ✅ POST /api/member/unenroll
+//  POST /api/member/unenroll
 router.post('/unenroll', auth, async (req, res) => {
     const { classId } = req.body;
 
