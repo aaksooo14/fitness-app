@@ -20,4 +20,10 @@ for admin side https://dribbble.com/shots/25294276-HR-Management-Dashboard
 
 meber dash borad <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/07694e41-3edf-4e95-af12-4bd2595f26ec" />
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1d22588d-a8d2-45d9-b5f8-84ca9a6cc6a7" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/52894bf1-da12-4fd5-aced-bde65d89c27c" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/73fb83a8-1f2f-483d-962d-7eddb88736a3" />
+
+
+
 
